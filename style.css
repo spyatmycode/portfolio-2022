@@ -749,6 +749,9 @@ form button{
     cursor: pointer;
 }
 
+form textarea{
+    font-weight: 600;
+}
 form h3{
     color: black;
     font-weight: 700;

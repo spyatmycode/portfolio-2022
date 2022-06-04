@@ -546,22 +546,19 @@
 
             </div>
 
-            <form action="index.html" netlify>
+            <form action="index.html" netlify onsubmit="submitmessage()" method="get">
                 <h3>Leave a Message</h3>
-                <input type="text" class="full-name" placeholder="Full Name..">
+                <input type="text" class="full-name" placeholder="Full Name.." name="Fullname" >
 
-                <input type="email" placeholder="Email..">
+                <input type="email" placeholder="Email.." name="Email" required>
 
-                <input type="text" placeholder="Subject..">
+                <input type="text" placeholder="Subject.." name="Subject">
 
-                <textarea placeholder="Message Description" cols="30" rows="10"></textarea>
+                <textarea placeholder="Message Description" cols="30" rows="10" name="Message"></textarea>
 
                 <button type="submit">Submit</button>
 
-
-
-
-
+                
 
             </form>
 
