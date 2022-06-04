@@ -6,26 +6,40 @@ let preloader = document.querySelector('.preloader')
 
 
 
+
+
+
+
 function preloaderFunction(){
     
     preloader.style.display = "none"
 }
 
-setTimeout(preloaderFunction, 6000)
+setTimeout(preloaderFunction, 1000)
 
 
 burger.addEventListener('click', () => {
 
     burger.classList.toggle('active')
     mobileNav.classList.toggle('ctive')
+    
+
 
 }
 )
 
+
+
+
+
 let skillSet = [
     "Software Developer",
-    "Data Analyst",
-    "Data Science Expert"
+    "Junior Front End Engineer",
+    "Data Scientist",
+    "Fast Intuitive Learner",
+    "Computer Science Major",
+    "Hire Me"
+
 ]
 
 let mainParagraphCount = 0;
@@ -74,4 +88,14 @@ function revealScroll(){
 
 
 }
+
+function submitmessage(){
+
+    let personName = document.querySelector('.full-name')
+
+
+    return alert("Thank you Mr/Mrs " + personName.value)
+}
+
+
 
