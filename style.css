@@ -13,7 +13,6 @@ html {
 ::-webkit-scrollbar-thumb{
     background-color: darkorange;
     border-radius: 10px;
-    cursor: pointer;
     width: 5px;
     cursor: pointer;
 
@@ -191,7 +190,7 @@ main .main-text {
 main .arrow-down {
     background-color: darkorange;
     color: black;
-    padding: 20px;
+    padding: 15px;
     border-radius: 50%;
     font-size: 30px;
     position: absolute;
@@ -200,6 +199,7 @@ main .arrow-down {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-weight: 700 ;
 
 }
 
@@ -347,10 +347,10 @@ main .main-buttons {
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    padding: 40px 29px;
+    padding: 40px 25px;
     background-color: rgba(36, 31, 31, 0.781);
     border-radius: 5px;
-    margin: 10px;
+    margin: 30px;
     margin-bottom: 30px;
 
 
@@ -579,19 +579,19 @@ main .main-buttons {
 
     position: relative;
     width: 300px;
-    height: 300px;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid white;
-    border-radius: 6px;
+    border-radius: 2px;
+    border: none;
     
 }
 
 .project-image img{
     display: block;
     width: 100%;
-    width: 100%;
+    height: 100%;
     
 }
 
@@ -639,6 +639,10 @@ main .main-buttons {
     flex-direction: row ;
 } 
 
+.projects-page p{
+    font-size: 20px;
+    text-align: center;
+}
 .sub{
     display: grid;
     grid-template-columns: auto;
@@ -802,6 +806,10 @@ form h3{
     margin: 20px;
 }
 
+.extras .socials{
+    margin-top: 40px;
+}
+
 footer{
     font-family: var(--font);
     display: block;
@@ -810,6 +818,10 @@ footer{
     min-height: 15vh;
 }
 
+footer h6{
+    font-size: 7px;
+    margin-top: 40px;
+}
 
 
 

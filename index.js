@@ -1,10 +1,20 @@
+//Frankly, I made this with almost everything I learnt.
+//Jah bless you as you appreciate my work
+//Don't spy at my code LOL
+//This took like a week to make so yeah
+
+
 let burger = document.querySelector('.burger')
 let mobileNav = document.querySelector('.mobile-nav')
 let mainParagraph = document.querySelector('.main-page-paragraph')
 
 let preloader = document.querySelector('.preloader')
 
+let todayDate = new Date;
 
+let dateDisplay = document.querySelector('h6');
+
+dateDisplay.textContent = "Today's Date: " + todayDate
 
 
 
@@ -35,7 +45,6 @@ burger.addEventListener('click', () => {
 let skillSet = [
     "Software Developer",
     "Junior Front End Engineer",
-    "Data Scientist",
     "Fast Intuitive Learner",
     "Computer Science Major",
     "Hire Me"
