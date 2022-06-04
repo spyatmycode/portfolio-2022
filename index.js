@@ -25,7 +25,7 @@ function preloaderFunction(){
     preloader.style.display = "none"
 }
 
-setTimeout(preloaderFunction, 1000)
+setTimeout(preloaderFunction, 5000)
 
 
 burger.addEventListener('click', () => {
@@ -79,10 +79,10 @@ function revealScroll(){
         
         let windowHeight = window.innerHeight
         let topOfRevealElement = revealOnScrollElement[count].getBoundingClientRect().top
-        let revealPoint = 120
+        let revealPoint = 170
 
 
-        if(topOfRevealElement < windowHeight - revealPoint){
+        if(topOfRevealElement <= windowHeight - revealPoint){
             revealOnScrollElement[count].classList.add('translate-class')
         }
         else{
