@@ -417,7 +417,7 @@ main .main-buttons {
     opacity: 1;
     margin-top: 20px;
     margin-bottom: 20px;
-    overflow-x: hidden !important;
+    overflow-y: hidden !important;
     width: auto;
 }
 
