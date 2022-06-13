@@ -295,6 +295,7 @@ main .main-buttons {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: left;
     
 }
 
@@ -305,11 +306,11 @@ main .main-buttons {
 
 .col-1 span{
     font-weight: 900;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .col-2 span{
-    font-size: 16px;
+    font-size: 12px;
     color: grey;
     font-weight: 900;
     margin-right: 10px;
@@ -423,6 +424,7 @@ main .main-buttons {
     margin-top: 20px;
     margin-bottom: 20px;
     overflow-y: hidden !important;
+    overflow-x: hidden !important;
     width: auto;
 }
 
@@ -439,6 +441,10 @@ main .main-buttons {
     .section1 {
         display: grid;
         grid-template-columns: auto auto auto;
+    }
+
+    .col-1 span, .col-2 span{
+        font-size: 20px;
     }
 
     .section2 {
