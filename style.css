@@ -167,8 +167,12 @@ main p {
     text-align: center;
     font-family: 'poppins', sans-serif;
     font-weight: 600;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.6s;
+    opacity: 0.9;
 
 }
+
+
 
 main h2 {
     font-size: 35px;
@@ -208,6 +212,7 @@ main .arrow-down a{
 
     text-decoration: none;
     color: black;
+    padding: 0
     
 }
 
@@ -811,11 +816,13 @@ footer{
     color: white;
     text-align: center;
     min-height: 15vh;
+    font-size: larger;
 }
 
 footer h6{
     font-size: 9px;
     margin-top: 40px;
+    
 }
 
 

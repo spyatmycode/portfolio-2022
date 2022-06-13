@@ -43,10 +43,11 @@ burger.addEventListener('click', () => {
 
 
 let skillSet = [
-    "Software Developer",
-    "Junior Front End Engineer",
+    "Software Engineer",
+    "Front End Developer",
     "Fast Intuitive Learner",
     "Computer Science Major",
+    "Data Science Enthusiast",
     "Hire Me"
 
 ]
@@ -64,7 +65,7 @@ function skillSetParagraph() {
         mainParagraphCount = 0
     }
 
-    setTimeout(skillSetParagraph, 3000)
+    setTimeout(skillSetParagraph, 4000)
 }
 
 skillSetParagraph()
