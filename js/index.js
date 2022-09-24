@@ -10,11 +10,13 @@ let mainParagraph = document.querySelector('.main-page-paragraph')
 
 let preloader = document.querySelector('.preloader')
 
-let todayDate = new Date;
+let todayDate_year = new Date().getFullYear();
+let todayDate_month = new Date().getMonth() + 1;
+let todayDate_day = new Date().getUTCDate()
 
 let dateDisplay = document.querySelector('h6');
 
-dateDisplay.textContent = "Today's Date: " + todayDate
+dateDisplay.textContent = `${todayDate_day}-${todayDate_month}-${todayDate_year}`
 
 
 
@@ -31,7 +33,7 @@ setTimeout(preloaderFunction, 5000)
 burger.addEventListener('click', () => {
 
     burger.classList.toggle('active')
-    mobileNav.classList.toggle('ctive')
+    mobileNav.classList.toggle('mobileHeight')
     
 
 
@@ -52,21 +54,23 @@ let skillSet = [
 
 ]
 
-let mainParagraphCount = 0;
 
-function skillSetParagraph() {
+
+// let mainParagraphCount = 0;
+
+// function skillSetParagraph() {
     
-    mainParagraph.textContent = skillSet[mainParagraphCount];
-    mainParagraphCount++
+//     mainParagraph.textContent = skillSet[mainParagraphCount];
+//     mainParagraphCount++
 
 
-    if (mainParagraphCount > skillSet.length - 1) {
+//     if (mainParagraphCount > skillSet.length - 1) {
 
-        mainParagraphCount = 0
-    }
+//         mainParagraphCount = 0
+//     }
 
-    setTimeout(skillSetParagraph, 4000)
-}
+//     setTimeout(skillSetParagraph, 4000)
+// }
 
 skillSetParagraph()
 
@@ -108,4 +112,8 @@ function submitmessage(){
 }
 
 
+let footer = document.querySelector('.copyright')
 
+footer.innerHTML = `Copyright &COPY; ${new Date().getFullYear()} Akeju Oluwanifemi <br>Adeola`
+
+  
