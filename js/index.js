@@ -116,4 +116,5 @@ let footer = document.querySelector('.copyright')
 
 footer.innerHTML = `Copyright &COPY; ${new Date().getFullYear()} Akeju Oluwanifemi <br>Adeola`
 
-  
+
+
