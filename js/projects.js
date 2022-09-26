@@ -12,17 +12,18 @@ const projectsList = [
 
     },
     {
+        link: "https://spyatmycode.github.io/Glorified-To-Do-List",
+        source: "Projects Images/Task-Note.png",
+        title: "Task Planner/Catalogue",
+        description: "CRD project using Javascript, CSS and HTML"
+    },
+    {
         link: "https://spyatmycode.github.io/Login-Page",
         source: "Projects Images/Login-Page.png",
         title: "Login Page",
         description: "Landing page using HTML, CSS and Javascript",
     },
-    {
-        link: "https://spyatmycode.github.io/Glorified-To-Do-List",
-        source: "Projects Images/Task-Note.png",
-        title: "Task Planner",
-        description: "CRD project using Javascript, CSS and HTML"
-    },
+    
     {
         link: "https://spyatmycode.github.io/My-First-JS-calculator",
         source: "Projects Images/JS-calculator.png",
@@ -42,12 +43,7 @@ const projectsList = [
         title: "Attendance Log",
         description: "HTML5, CSS Flex Box and Javascript"
     },
-    {
-        link: "https://spyatmycode.github.io/My-First-Count-Down-Timer",
-        source: "Projects Images/count-down-timer.png",
-        title: "Count Down Timer",
-        description: "HTML5, CSS Flex Box and Javascript "
-    },
+    
     {
         link: "https://spyatmycode.github.io/Date-Count-Down",
         source: "Projects Images/count-down-timer-for-date.png",
@@ -55,6 +51,7 @@ const projectsList = [
         description: "HTML5, CSS Flex Box and Javascript"
     }
 ]
+console.log(projectsList.length)
 
 
 
@@ -195,5 +192,3 @@ function preloaderFunction(){
 }
 
 setTimeout(preloaderFunction, 3500)
-
-
