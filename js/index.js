@@ -3,6 +3,9 @@
 //Don't spy at my code LOL
 //This took like a week to make so yeah
 
+//This is September 26th and something strange is happening with the way I link m JS to my html
+//It seems as though this index.js file has refused to operational due the way I have all scripts linked to one file
+//I'm working on it.
 
 let burger = document.querySelector('.burger')
 let mobileNav = document.querySelector('.mobile-nav')
