@@ -18,10 +18,10 @@ const projectsList = [
         description: "Landing page using HTML, CSS and Javascript",
     },
     {
-        link: "http://akejuoluwanifemi-portfolio2.netlify.app",
-        source: "Projects Images/previous-portfolio.png",
-        title: "Previous Portfolio Site",
-        description: "HTML5, CSS Grid, Flex Box and Javascript"
+        link: "https://spyatmycode.github.io/Glorified-To-Do-List",
+        source: "Projects Images/Task-Note.png",
+        title: "Task Planner",
+        description: "CRD project using Javascript, CSS and HTML"
     },
     {
         link: "https://spyatmycode.github.io/My-First-JS-calculator",
@@ -29,6 +29,13 @@ const projectsList = [
         title: "Simple Calculator",
         description: "HTML5, CSS Grid, Flex Box and Javascript"
     },
+    {
+        link: "http://akejuoluwanifemi-portfolio2.netlify.app",
+        source: "Projects Images/previous-portfolio.png",
+        title: "Previous Portfolio Site",
+        description: "HTML5, CSS Grid, Flex Box and Javascript"
+    },
+    
     {
         link: "https://spyatmycode.github.io/Attendance-Counter/",
         source: "Projects Images/people-counter.png",
@@ -130,5 +137,63 @@ function showHideProjects() {
 }
 
 showHideProjects()
+
+let todayDate_year = new Date().getFullYear();
+let todayDate_month = new Date().getMonth() + 1;
+let todayDate_day = new Date().getUTCDate()
+
+let dateDisplay = document.querySelector('h6');
+
+dateDisplay.textContent = `${todayDate_day}-${todayDate_month}-${todayDate_year}`
+
+let revealOnScrollElement = document.querySelectorAll('.reveal-on-scroll')
+
+window.addEventListener('scroll', revealScroll)
+
+function revealScroll(){
+
+    for(let count = 0; count< revealOnScrollElement.length; count++){
+        
+        let windowHeight = window.innerHeight
+        let topOfRevealElement = revealOnScrollElement[count].getBoundingClientRect().top
+        let revealPoint = 170
+
+
+        if(topOfRevealElement <= windowHeight - revealPoint){
+            revealOnScrollElement[count].classList.add('translate-class')
+        }
+        else{
+            revealOnScrollElement[count].classList.remove('translate-class')
+            
+        }
+
+        }
+
+
+
+
+
+}
+
+function submitmessage(){
+
+    let personName = document.querySelector('.full-name')
+
+
+    return alert("Thank you Mr/Mrs " + personName.value)
+}
+
+
+let footer = document.querySelector('.copyright')
+
+footer.innerHTML = `Copyright &COPY; ${new Date().getFullYear()} Akeju Oluwanifemi <br>Adeola`
+
+let preloader = document.querySelector('.preloader')
+function preloaderFunction(){
+    
+    preloader.style.display = "none"
+}
+
+setTimeout(preloaderFunction, 3500)
 
 

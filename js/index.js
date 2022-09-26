@@ -11,15 +11,8 @@ let burger = document.querySelector('.burger')
 let mobileNav = document.querySelector('.mobile-nav')
 let mainParagraph = document.querySelector('.main-page-paragraph')
 
-let preloader = document.querySelector('.preloader')
 
-let todayDate_year = new Date().getFullYear();
-let todayDate_month = new Date().getMonth() + 1;
-let todayDate_day = new Date().getUTCDate()
 
-let dateDisplay = document.querySelector('h6');
-
-dateDisplay.textContent = `${todayDate_day}-${todayDate_month}-${todayDate_year}`
 
 
 
@@ -76,48 +69,6 @@ let skillSet = [
 // }
 
 skillSetParagraph()
-
-let revealOnScrollElement = document.querySelectorAll('.reveal-on-scroll')
-
-window.addEventListener('scroll', revealScroll)
-
-function revealScroll(){
-
-    for(let count = 0; count< revealOnScrollElement.length; count++){
-        
-        let windowHeight = window.innerHeight
-        let topOfRevealElement = revealOnScrollElement[count].getBoundingClientRect().top
-        let revealPoint = 170
-
-
-        if(topOfRevealElement <= windowHeight - revealPoint){
-            revealOnScrollElement[count].classList.add('translate-class')
-        }
-        else{
-            revealOnScrollElement[count].classList.remove('translate-class')
-            
-        }
-
-        }
-
-
-
-
-
-}
-
-function submitmessage(){
-
-    let personName = document.querySelector('.full-name')
-
-
-    return alert("Thank you Mr/Mrs " + personName.value)
-}
-
-
-let footer = document.querySelector('.copyright')
-
-footer.innerHTML = `Copyright &COPY; ${new Date().getFullYear()} Akeju Oluwanifemi <br>Adeola`
 
 
 
